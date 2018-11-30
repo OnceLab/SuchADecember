@@ -20,7 +20,15 @@ function draw() {
         sr.render();
     })
 
-    if (rectArray[rectArray.length-1].position.x > 2.5*width ||rectArray[rectArray.length-1].position.x < -2.5*width) {
+    let trueSet = 0;
+    rectArray.forEach(rec => {
+        if (rec.position.x > 1.1*width || rec.position.x < -1.1*width) {
+            trueSet += 1;
+        }
+    })
+
+    //console.log(trueSet)
+    if (trueSet >= rectArray.length ) {
         blendMode(BLEND);
         background(255);
         fill(0);
@@ -66,13 +74,13 @@ class BreathingRect {
     move() {
         this.height += this.heightSpeed;
 
-        if (this.height > 1000 && this.gen == 0) {
+        if (this.height > 800 && this.gen == 0) {
             this.position.add(this.velocity0);
         } else if (this.height > 1000 && this.gen == 1){
             this.position.add(this.velocity1);
-        } else if (this.height > 1000 && this.gen == 2){
+        } else if (this.height > 1100 && this.gen == 2){
             this.position.add(this.velocity2);
-        } else if (this.height > 1000 && this.gen == 3){
+        } else if (this.height > 1200 && this.gen == 3){
             this.position.add(this.velocity3);
         }
     }

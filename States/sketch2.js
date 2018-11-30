@@ -20,7 +20,16 @@ function draw() {
         sr.render();
     })
 
-    if (rectArray[rectArray.length-1].position.x > 1.5*width ||rectArray[rectArray.length-1].position.x < -1.5*width) {
+    let trueSet = 0;
+
+    rectArray.forEach(rec => {
+        if (rec.position.x > 1.5*width || rec.position.x < -1.5*width) {
+            trueSet += 1;
+        }
+    })
+
+    //console.log(trueSet);
+    if (trueSet >= rectArray.length) {
         blendMode(BLEND);
         background(255);
         fill(0);
@@ -47,11 +56,11 @@ function mouseClicked() {
 class BreathingRect {
     constructor() {
         this.position = createVector(random(width), random(height));
-        this.width = random(20, 50);
-        this.height = random(20, 200);
+        this.width = random(10, 100);
+        this.height = random(20, 100);
 
         this.stroke = (255,255, 100);
-        this.strokeWeight = random(1,5);
+        this.strokeWeight = random(1,2);
 
         this.heightSpeed = random(0.5,1) * 10;
 
@@ -67,13 +76,13 @@ class BreathingRect {
     move() {
         this.height += this.heightSpeed;
 
-        if (this.height > height && this.gen == 0) {
+        if (this.height > height * 0.8 && this.gen == 0) {
             this.position.add(this.velocity0);
-        } else if (this.height > height && this.gen == 1){
+        } else if (this.height > height * 0.9 && this.gen == 1){
             this.position.add(this.velocity1);
-        } else if (this.height > height && this.gen == 2){
+        } else if (this.height > height * 1&& this.gen == 2){
             this.position.add(this.velocity2);
-        } else if (this.height > height && this.gen == 3){
+        } else if (this.height > height * 1.1&& this.gen == 3){
             this.position.add(this.velocity3);
         }
     }
