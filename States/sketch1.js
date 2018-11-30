@@ -19,9 +19,20 @@ function draw() {
         sr.move();
         sr.render();
     })
+
+    if (rectArray[rectArray.length-1].position.x > 2.5*width ||rectArray[rectArray.length-1].position.x < -2.5*width) {
+        blendMode(BLEND);
+        background(255);
+        fill(0);
+        textSize(32);
+        textAlign(CENTER);
+        text('Such a December - 1', width/2 , height/2);
+        noLoop();
+    }
 }
 
 function mouseClicked() {
+    noFill();
     rectArray = [];
     for (let i = 0; i < 100; i++) {
         let singleRect = new BreathingRect()

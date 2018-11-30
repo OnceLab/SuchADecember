@@ -19,11 +19,22 @@ function draw() {
         sr.move();
         sr.render();
     })
+
+    if (rectArray[rectArray.length-1].position.x > 1.5*width ||rectArray[rectArray.length-1].position.x < -1.5*width) {
+        blendMode(BLEND);
+        background(255);
+        fill(0);
+        textSize(32);
+        textAlign(CENTER);
+        text('Such a December - 2', width/2 , height/2);
+        noLoop();
+    }
 }
 
 function mouseClicked() {
     blendMode(BLEND);
     background(0);
+    loop();
     blendMode(ADD);
     rectArray = [];
     for (let i = 0; i < 100; i++) {
@@ -36,8 +47,8 @@ function mouseClicked() {
 class BreathingRect {
     constructor() {
         this.position = createVector(random(width), random(height));
-        this.width = random(20, 200);
-        this.height = random(20, 100);
+        this.width = random(20, 50);
+        this.height = random(20, 200);
 
         this.stroke = (255,255, 100);
         this.strokeWeight = random(1,5);
@@ -56,13 +67,13 @@ class BreathingRect {
     move() {
         this.height += this.heightSpeed;
 
-        if (this.height > 1000 && this.gen == 0) {
+        if (this.height > height && this.gen == 0) {
             this.position.add(this.velocity0);
-        } else if (this.height > 1000 && this.gen == 1){
+        } else if (this.height > height && this.gen == 1){
             this.position.add(this.velocity1);
-        } else if (this.height > 1000 && this.gen == 2){
+        } else if (this.height > height && this.gen == 2){
             this.position.add(this.velocity2);
-        } else if (this.height > 1000 && this.gen == 3){
+        } else if (this.height > height && this.gen == 3){
             this.position.add(this.velocity3);
         }
     }
