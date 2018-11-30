@@ -32,6 +32,8 @@ function draw() {
 }
 
 function mouseClicked() {
+    loop();
+    background(255);
     noFill();
     rectArray = [];
     for (let i = 0; i < 100; i++) {
