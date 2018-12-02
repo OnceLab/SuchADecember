@@ -5,7 +5,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     blendMode(ADD);
     noStroke();
-    fill('rgba(0,64,128,0.01)')
+    fill('rgba(62,128,128,0.01)')
     rectMode(CENTER);
     for (let i = 0; i < 100; i++) {
         let singleRect = new BreathingRect()
@@ -31,7 +31,7 @@ function draw() {
 
     if (trueSet >= rectArray.length) {
         blendMode(BLEND);
-        fill(255);
+        fill(0);
         textSize(32);
         textAlign(CENTER);
         text('Such a December - 4', width/2 , height/2);
