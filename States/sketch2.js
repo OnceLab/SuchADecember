@@ -31,7 +31,7 @@ function draw() {
     //console.log(trueSet);
     if (trueSet >= rectArray.length) {
         blendMode(BLEND);
-        background(255);
+        //background(255);
         fill(0);
         textSize(32);
         textAlign(CENTER);
