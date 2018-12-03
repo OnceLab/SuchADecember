@@ -1,4 +1,5 @@
-rectArray = [];
+let rectArray = [];
+
 
 function setup() {
     background(0);

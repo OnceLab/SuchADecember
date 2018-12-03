@@ -6,6 +6,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     noFill();
     rectMode(CENTER);
+    frameRate(30);
     for (let i = 0; i < max(int(windowWidth/20), int(windowHeight/20),40); i++) {
         let singleRect = new BreathingRect();
         rectArray.push(singleRect)
@@ -20,6 +21,16 @@ function draw() {
         sr.move();
         sr.render();
     })
+
+    if (frameCount > 150) {
+        //blendMode(BLEND);
+        fill(255);
+        noStroke();
+        textSize(32);
+        textAlign(CENTER);
+        text('Such a December - 3', width/2 , height * 3 / 4);
+        //noLoop();
+    }
 }
 
 function getRandomColor() {
@@ -39,8 +50,6 @@ class BreathingRect {
         this.velocity.normalize().mult(random(1,5));
         this.randoRate = random(-3,3);
         this.gen = floor(random(2));
-
-
 
     }
 
@@ -63,6 +72,7 @@ class BreathingRect {
     }
 
     render(){
+        noFill();
         stroke(this.color);
         strokeWeight(this.strokeWeight);
 
