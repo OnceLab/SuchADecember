@@ -39,7 +39,7 @@ function draw() {
     fill(255);
     textSize(32);
     textAlign(CENTER);
-    text('Such a December - 6', width/2 , height - 100);
+    text('Such a December - 7', width/2 , height - 100);
     noLoop();
 }
 
