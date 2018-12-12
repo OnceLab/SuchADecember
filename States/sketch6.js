@@ -56,7 +56,7 @@ class BreathingRect {
         this.heightShrink = random(1,5);
         this.widthShrink = random(1,10);
 
-        this.on = false
+        this.on = false // when the height shrinking process ends, the width shrinking will begin. Then when the width shrinking ends, the generations of ellipse will be turned on.
         this.radius = 0;
         this.radiusExpandingRate= random(1,10);
 
