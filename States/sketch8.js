@@ -19,18 +19,26 @@ function setup() {
     blendMode(ADD); // for radiant effect;
     if (width < 1080) {
         for (let i = 0; i < 50; i++) {
-            flowers.push(new Shape(int(random(4,8)),int(random(20,60))));
+            flowers.push(new Shape(int(random(4,7)),int(random(20,60))));
         }
     } else {
         for (let i = 0; i < 100; i++) {
-            flowers.push(new Shape(int(random(4,8)),int(random(20,100))));
+            flowers.push(new Shape(int(random(4,7)),int(random(20,100))));
         }
     }
     background(15,25,24);
-    let rando = random(0.5);
-    stroke(`rgba(255,255,255,${rando})`);
+    let rando = random();
+    if (rando < 0.25) {
+        stroke(`rgba(255,255,255,0.3)`)
+    } else if (rando < 0.5) {
+        stroke(`rgba(255,255,255,0.2)`)
+    } else if (rando < 0.75) {
+        stroke(`rgba(255,255,255,0.1)`)
+    } else {
+        stroke(`rgba(255,255,255,0.01)`)
+    }
 
-    //noLoop();
+    noLoop();
 
 }
 
@@ -83,11 +91,11 @@ class Shape  {
             push();
                 translate(this.position.x, this.position.y);
 
-                for (let j = 0; j < i*2; j++) {
+                for (let j = 0; j < i*1.5; j++) {
                     rotate(this.rotation);
                     let layer = new OrganicLayer(this.radius, this.position, this.color);
                     layer.render();
-                    this.rotation += random(60,120);
+                    this.rotation += random(30,90);
                 }
             pop();
 

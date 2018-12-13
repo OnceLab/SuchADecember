@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee23b8a5-d10f-445d-9aae-3aa23ef0e753" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/States/state8.html" beforeDir="false" afterPath="$PROJECT_DIR$/States/state8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/States/sketch8.js" beforeDir="false" afterPath="$PROJECT_DIR$/States/sketch8.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,8 +39,8 @@
           <file leaf-file-name="sketch8.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/States/sketch8.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="750">
-                  <caret line="162" column="39" lean-forward="true" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
+                <state relative-caret-position="325">
+                  <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -71,7 +71,7 @@
             <entry file="file://$PROJECT_DIR$/States/state8.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+                  <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/States/state7.html" />
         <option value="$PROJECT_DIR$/States/sketch6.js" />
         <option value="$PROJECT_DIR$/States/sketch7.js" />
-        <option value="$PROJECT_DIR$/States/sketch8.js" />
         <option value="$PROJECT_DIR$/States/state8.html" />
+        <option value="$PROJECT_DIR$/States/sketch8.js" />
       </list>
     </option>
   </component>
@@ -203,12 +203,12 @@
       <workItem from="1544609082697" duration="9214000" />
       <workItem from="1544618902601" duration="101000" />
       <workItem from="1544668885034" duration="6409000" />
-      <workItem from="1544706143403" duration="6163000" />
+      <workItem from="1544706143403" duration="7310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29704000" />
+    <option name="totallyTimeSpent" value="30851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -588,17 +588,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/States/sketch8.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="162" column="39" lean-forward="true" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/States/state8.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/States/sketch8.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
         </state>
       </provider>
     </entry>
