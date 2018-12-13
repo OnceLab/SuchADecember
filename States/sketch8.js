@@ -28,11 +28,11 @@ function setup() {
     }
     background(15,25,24);
     let rando = random();
-    if (rando < 0.25) {
+    if (rando < 0.1) {
         stroke(`rgba(255,255,255,0.3)`)
-    } else if (rando < 0.5) {
+    } else if (rando < 0.2) {
         stroke(`rgba(255,255,255,0.2)`)
-    } else if (rando < 0.75) {
+    } else if (rando < 0.3) {
         stroke(`rgba(255,255,255,0.1)`)
     } else {
         stroke(`rgba(255,255,255,0.01)`)
