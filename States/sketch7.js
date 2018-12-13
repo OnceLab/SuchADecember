@@ -17,7 +17,7 @@ function setup() {
         }
     } else {
         for (let i = 0; i < 100; i++) {
-            flowers.push(new Shape(int(random(5,15)),int(random(20,60))));
+            flowers.push(new Shape(int(random(5,15)),int(random(20,40))));
         }
     }
 
